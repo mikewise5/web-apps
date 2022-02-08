@@ -1,0 +1,13 @@
+<%
+
+companies = Company.all
+
+%>
+
+<h1> companies </h1>
+
+<ul> 
+<% for company in companies %>
+    <li><%= company.name %></li>
+    <% end %>
+</ul>
